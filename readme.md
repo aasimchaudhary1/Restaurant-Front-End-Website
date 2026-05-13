@@ -161,7 +161,7 @@ Royal-Bites/
 
 Developed by Javaria Asif
 
-Frontend Developer | UI/UX Enthusiast
+Frontend Developer 
 
 ---
 
