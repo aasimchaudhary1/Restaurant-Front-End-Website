@@ -167,4 +167,4 @@ Frontend Developer
 
 # License
 
-This project is created for educational and portfolio purposes.
+This project was developed as part of my internship project at DecodeLabs and is intended for educational and portfolio purposes.
