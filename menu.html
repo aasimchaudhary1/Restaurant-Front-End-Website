@@ -19,7 +19,6 @@
 </head>
 
 <body>
-
   <!-- TOP HEADER -->
 
   <div class="top-header">
@@ -51,26 +50,85 @@
 
   <!-- NAVBAR -->
 
-  <nav class="navbar">
+ 
+  <div class="navbar">
 
     <div class="logo">
       Royal Bites
     </div>
-
     <div class="nav-links">
 
       <a href="index.html">Home</a>
       <a href="index.html#about">About</a>
       <a href="menu.html">Menu</a>
-      <a href="#">Contact</a>
+      <a href="contact.html">Contact</a>
 
-      <button class="book-btn">
+      <a href="booktable.html" class="book-btn">
         Book a Table
-      </button>
+    </a>
 
     </div>
+    <div class="nav-right">
 
-  </nav>
+      <!-- CART -->
+  
+      <div class="cart-icon">
+  
+          <i class="fa-solid fa-cart-shopping"></i>
+  
+          <span>0</span>
+  
+      </div>
+     
+      <!-- HAMBURGER -->
+  
+      <div class="hamburger">
+  
+          <span></span>
+          <span></span>
+          <span></span>
+  
+      </div>
+  
+  </div>
+  </div>
+  
+   
+<div class="cart-sidebar">
+
+  <div class="cart-top">
+
+      <h2>Your Cart</h2>
+
+      <i class="fa-solid fa-xmark close-cart"></i>
+
+  </div>
+
+  <div class="cart-items">
+
+      <p>Your cart is empty.</p>
+
+  </div>
+  <div class="cart-bottom">
+
+    <div class="cart-total">
+        Total: <span id="cart-total">$0</span>
+    </div>
+
+    <button class="checkout-btn">
+        Checkout
+    </button>
+
+</div>
+
+</div>
+
+<!-- OVERLAY -->
+
+<div class="cart-overlay"></div>
+   
+
+  </div>
 
 
   <!-- HERO SECTION -->
@@ -99,7 +157,7 @@
   
       <div class="food-box">
   
-        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500" alt="food">
+        <img src="./assets/steak.jpeg" alt="food">
   
         <h3>Grilled Steak</h3>
   
@@ -112,7 +170,7 @@
   
       <div class="food-box">
   
-        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500" alt="food">
+        <img src="./assets/salad.jpeg" alt="food">
   
         <h3>Healthy Salad</h3>
   
@@ -125,7 +183,7 @@
   
       <div class="food-box">
   
-        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500" alt="food">
+        <img src="./assets/rice.jpeg" alt="food">
   
         <h3>Special Rice</h3>
   
@@ -138,7 +196,7 @@
   
       <div class="food-box">
   
-        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=500" alt="food">
+        <img src="./assets/breakfast.jpeg" alt="food">
   
         <h3>Fresh Breakfast</h3>
   
@@ -151,7 +209,7 @@
   
       <div class="food-box">
   
-        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=500" alt="food">
+        <img src="./assets/burger.jpeg" alt="food">
   
         <h3>Cheese Burger</h3>
   
@@ -164,7 +222,7 @@
   
       <div class="food-box">
   
-        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500" alt="food">
+        <img src="./assets/pizza.jpeg" alt="food">
   
         <h3>Italian Pizza</h3>
   
@@ -177,7 +235,7 @@
   
       <div class="food-box">
   
-        <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?w=500" alt="food">
+        <img src="./assets/chicken pasta.jpeg" alt="food">
   
         <h3>Chicken Pasta</h3>
   
@@ -190,7 +248,7 @@
   
       <div class="food-box">
   
-        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=500" alt="food">
+        <img src="./assets/seafood.jpeg" alt="food">
   
         <h3>Sea Food</h3>
   
@@ -203,7 +261,7 @@
   
       <div class="food-box">
   
-        <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=500" alt="food">
+        <img src="./assets/Coffee.jpg" alt="food">
   
         <h3>Hot Coffee</h3>
   
@@ -216,7 +274,7 @@
   
       <div class="food-box">
   
-        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500" alt="food">
+        <img src="./assets/photo-1565958011703-44f9829ba187.jpeg" alt="food">
   
         <h3>Chocolate Cake</h3>
   
@@ -230,173 +288,496 @@
   
 
   </section>
-
+ 
  <!-- MENU SECTION -->
 
-<section class="food-menu-section" id="menu">
-    <div class="menu-tabs">
+<!-- =========================
+MENU SECTION
+========================= -->
 
-        <button class="tab-btn active" data-category="breakfast">
-            Breakfast
-        </button>
-    
-        <button class="tab-btn" data-category="lunch">
-            Lunch
-        </button>
-    
-        <button class="tab-btn" data-category="dinner">
-            Dinner
-        </button>
-    
-        <button class="tab-btn" data-category="drinks">
-            Drinks
-        </button>
-    
-        <button class="tab-btn" data-category="desserts">
-            Desserts
-        </button>
-    
-        <button class="tab-btn" data-category="wine">
-            Wine
-        </button>
-    
-    </div>
-    
+<!-- =========================
+MENU SECTION
+========================= -->
 
-    <div class="menu-grid">
-<div class="menu-item breakfast">
-    <div class="menu-img">
-        <img src="images/menu1.jpg">
-    </div>
+<section class="menu-section" id="menu">
 
-    <div class="menu-content">
+  <!-- TITLE -->
 
-        <div class="menu-top">
+  <div class="menu-title">
 
-            <h3>Grilled Beef with potatoes</h3>
+      <span>Specialties</span>
 
-            <span>$29</span>
+      <h2>Our Menu</h2>
 
-        </div>
+  </div>
 
-        <p>Meat, Potatoes, Rice, Tomatoe</p>
+  <!-- TABS -->
 
-        <a href="#">Order now</a>
+  <div class="menu-tabs">
 
-    </div>
+      <button class="tab-btn active" data-category="breakfast">Breakfast</button>
+      <button class="tab-btn" data-category="lunch">Lunch</button>
+      <button class="tab-btn" data-category="dinner">Dinner</button>
+      <button class="tab-btn" data-category="drinks">Drinks</button>
+      <button class="tab-btn" data-category="desserts">Desserts</button>
+      <button class="tab-btn" data-category="wine">Wine</button>
 
-    <!-- ITEM -->
+  </div>
 
-    <div class="menu-img">
-        <img src="images/menu2.jpg">
-    </div>
+  <!-- MENU GRID -->
 
-    <div class="menu-content">
+  <div class="menu-grid">
 
-        <div class="menu-top">
+      <!-- ======================================
+      BREAKFAST
+      ======================================= -->
 
-            <h3>Grilled Beef with potatoes</h3>
+      <div class="menu-item breakfast">
+          <div class="menu-img">
+              <img src="./assets/pencake.jpg">
+          </div>
 
-            <span>$29</span>
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Classic Pancakes</h3>
+                  <span>$18</span>
+              </div>
 
-        </div>
+              <p>Fresh pancakes with honey and berries.</p>
 
-        <p>Meat, Potatoes, Rice, Tomatoe</p>
+              <button>Order now</button>
+          </div>
+      </div>
 
-        <a href="#">Order now</a>
+      <div class="menu-item breakfast">
+          <div class="menu-img">
+              <img src="./assets/toast.jpg">
+          </div>
 
-    </div>
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>French Toast</h3>
+                  <span>$20</span>
+              </div>
 
-    <!-- ITEM -->
+              <p>Golden toast with maple syrup.</p>
 
-    <div class="menu-img">
-        <img src="images/menu3.jpg">
-    </div>
+              <button>Order now</button>
+          </div>
+      </div>
 
-    <div class="menu-content">
+      <div class="menu-item breakfast">
+          <div class="menu-img">
+              <img src="./assets/sandwich.avif">
+          </div>
 
-        <div class="menu-top">
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Egg Sandwich</h3>
+                  <span>$15</span>
+              </div>
 
-            <h3>Grilled Beef with potatoes</h3>
+              <p>Loaded sandwich with cheese and eggs.</p>
 
-            <span>$29</span>
+              <button>Order now</button>
+          </div>
+      </div>
 
-        </div>
+      <div class="menu-item breakfast">
+          <div class="menu-img">
+              <img src="./assets/granola.jpg">
+          </div>
 
-        <p>Meat, Potatoes, Rice, Tomatoe</p>
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Healthy Bowl</h3>
+                  <span>$17</span>
+              </div>
 
-        <a href="#">Order now</a>
+              <p>Fresh fruits and granola breakfast bowl.</p>
 
-    </div>
+              <button>Order now</button>
+          </div>
+      </div>
 
-    <!-- ITEM -->
+      <div class="menu-item breakfast">
+          <div class="menu-img">
+              <img src="./assets/fried chicken.jpg">
+          </div>
 
-    <div class="menu-img">
-        <img src="images/menu4.jpg">
-    </div>
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Fried Chicken</h3>
+                  <span>$24</span>
+              </div>
 
-    <div class="menu-content">
+              <p>Crispy fried chicken breakfast combo.</p>
 
-        <div class="menu-top">
+              <button>Order now</button>
+          </div>
+      </div>
 
-            <h3>Grilled Beef with potatoes</h3>
+      <div class="menu-item breakfast">
+          <div class="menu-img">
+              <img src="./assets/avocado toast.jpg">
+          </div>
 
-            <span>$29</span>
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Avocado Toast</h3>
+                  <span>$19</span>
+              </div>
 
-        </div>
+              <p>Fresh avocado with poached egg.</p>
 
-        <p>Meat, Potatoes, Rice, Tomatoe</p>
+              <button>Order now</button>
+          </div>
+      </div>
 
-        <a href="#">Order now</a>
+      <!-- ======================================
+      LUNCH
+      ======================================= -->
 
-    </div>
+      <div class="menu-item lunch">
+          <div class="menu-img">
+              <img src="./assets/chicekn salad.jpg">
+          </div>
 
-    <!-- ITEM -->
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Chicken Salad</h3>
+                  <span>$25</span>
+              </div>
 
-    <div class="menu-img">
-        <img src="images/menu5.jpg">
-    </div>
+              <p>Healthy grilled chicken salad.</p>
 
-    <div class="menu-content">
+              <button>Order now</button>
+          </div>
+      </div>
 
-        <div class="menu-top">
+      <div class="menu-item lunch">
+          <div class="menu-img">
+              <img src="./assets/beef burger.jpg">
+          </div>
 
-            <h3>Grilled Beef with potatoes</h3>
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Beef Burger</h3>
+                  <span>$27</span>
+              </div>
 
-            <span>$29</span>
+              <p>Juicy burger with fries.</p>
 
-        </div>
+              <button>Order now</button>
+          </div>
+      </div>
 
-        <p>Meat, Potatoes, Rice, Tomatoe</p>
+      <div class="menu-item lunch">
+          <div class="menu-img">
+              <img src="./assets/italian pizza.jpg">
+          </div>
 
-        <a href="#">Order now</a>
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Italian Pizza</h3>
+                  <span>$30</span>
+              </div>
 
-    </div>
+              <p>Cheesy pizza with fresh toppings.</p>
 
-    <!-- ITEM -->
+              <button>Order now</button>
+          </div>
+      </div>
 
-    <div class="menu-img">
-        <img src="images/menu6.jpg">
-    </div>
+      <div class="menu-item lunch">
+          <div class="menu-img">
+              <img src="./assets/grilled steak.jpg">
+          </div>
 
-    <div class="menu-content">
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Grilled Steak</h3>
+                  <span>$35</span>
+              </div>
 
-        <div class="menu-top">
+              <p>Premium steak with vegetables.</p>
 
-            <h3>Grilled Beef with potatoes</h3>
+              <button>Order now</button>
+          </div>
+      </div>
 
-            <span>$29</span>
+      <div class="menu-item lunch">
+          <div class="menu-img">
+              <img src="./assets/seafood pasta.jpg">
+          </div>
 
-        </div>
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Seafood Pasta</h3>
+                  <span>$29</span>
+              </div>
 
-        <p>Meat, Potatoes, Rice, Tomatoe</p>
+              <p>Italian pasta with seafood sauce.</p>
 
-        <a href="#">Order now</a>
+              <button>Order now</button>
+          </div>
+      </div>
 
-    </div>
-</div>
-      
-    </div>
+      <div class="menu-item lunch">
+          <div class="menu-img">
+              <img src="./assets/Italian pasta.jpg">
+          </div>
+
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Italian Pasta</h3>
+                  <span>$26</span>
+              </div>
+
+              <p>Creamy white sauce Italian pasta.</p>
+
+              <button>Order now</button>
+          </div>
+      </div>
+
+      <!-- ======================================
+      DINNER
+      ======================================= -->
+
+      <div class="menu-item dinner">
+          <div class="menu-img">
+              <img src="./assets/roasted chicken.jpg">
+          </div>
+
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Roasted Chicken</h3>
+                  <span>$34</span>
+              </div>
+
+              <p>Delicious roasted chicken with herbs.</p>
+
+              <button>Order now</button>
+          </div>
+      </div>
+
+      <div class="menu-item dinner">
+          <div class="menu-img">
+              <img src="./assets/steak.avif">
+          </div>
+
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>BBQ Steak</h3>
+                  <span>$40</span>
+              </div>
+
+              <p>Grilled steak with BBQ sauce.</p>
+
+              <button>Order now</button>
+          </div>
+      </div>
+
+      <div class="menu-item dinner">
+          <div class="menu-img">
+              <img src="./assets/seafood platter.jpg">
+          </div>
+
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Seafood Platter</h3>
+                  <span>$45</span>
+              </div>
+
+              <p>Fresh seafood with special sauce.</p>
+
+              <button>Order now</button>
+          </div>
+      </div>
+
+      <div class="menu-item dinner">
+          <div class="menu-img">
+              <img src="./assets/grilled salmon.jpg">
+          </div>
+
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Grilled Salmon</h3>
+                  <span>$38</span>
+              </div>
+
+              <p>Healthy grilled salmon dinner.</p>
+
+              <button>Order now</button>
+          </div>
+      </div>
+
+      <div class="menu-item dinner">
+          <div class="menu-img">
+              <img src="./assets/chciken pasta.jpg">
+          </div>
+
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Chicken Pasta</h3>
+                  <span>$32</span>
+              </div>
+
+              <p>Creamy chicken pasta with herbs.</p>
+
+              <button>Order now</button>
+          </div>
+      </div>
+
+      <div class="menu-item dinner">
+          <div class="menu-img">
+              <img src="./assets/fried shrimp.jpg">
+          </div>
+
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Fried Shrimp</h3>
+                  <span>$36</span>
+              </div>
+
+              <p>Crunchy shrimp with fries.</p>
+
+              <button>Order now</button>
+          </div>
+      </div>
+
+      <!-- ======================================
+      DRINKS
+      ======================================= -->
+
+      <div class="menu-item drinks">
+          <div class="menu-img">
+              <img src="./assets/fresh mojito.jpg">
+          </div>
+
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Fresh Mojito</h3>
+                  <span>$12</span>
+              </div>
+
+              <p>Refreshing mint mojito drink.</p>
+
+              <button>Order now</button>
+          </div>
+      </div>
+
+      <div class="menu-item drinks">
+          <div class="menu-img">
+              <img src="./assets/orange juice.jpg">
+          </div>
+
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Orange Juice</h3>
+                  <span>$10</span>
+              </div>
+
+              <p>Freshly squeezed orange juice.</p>
+
+              <button>Order now</button>
+          </div>
+      </div>
+
+      <div class="menu-item drinks">
+          <div class="menu-img">
+              <img src="./assets/cold coffee.jpg">
+          </div>
+
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Cold Coffee</h3>
+                  <span>$14</span>
+              </div>
+
+              <p>Rich cold coffee with cream.</p>
+
+              <button>Order now</button>
+          </div>
+      </div>
+
+      <!-- ======================================
+      DESSERTS
+      ======================================= -->
+
+      <div class="menu-item desserts">
+          <div class="menu-img">
+              <img src="./assets/chocolate cake.jpg">
+          </div>
+
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Chocolate Cake</h3>
+                  <span>$16</span>
+              </div>
+
+              <p>Soft chocolate cake with cream.</p>
+
+              <button>Order now</button>
+          </div>
+      </div>
+
+      <div class="menu-item desserts">
+          <div class="menu-img">
+              <img src="./assets/icecream.jpg">
+          </div>
+
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Ice Cream</h3>
+                  <span>$11</span>
+              </div>
+
+              <p>Vanilla ice cream with toppings.</p>
+
+              <button>Order now</button>
+          </div>
+      </div>
+
+      <!-- ======================================
+      WINE
+      ======================================= -->
+
+      <div class="menu-item wine">
+          <div class="menu-img">
+              <img src="./assets/red wine.avif">
+          </div>
+
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>Red Wine</h3>
+                  <span>$55</span>
+              </div>
+
+              <p>Premium red wine collection.</p>
+
+              <button>Order now</button>
+          </div>
+      </div>
+
+      <div class="menu-item wine">
+          <div class="menu-img">
+              <img src="./assets/white wine.avif">
+          </div>
+
+          <div class="menu-content">
+              <div class="menu-top">
+                  <h3>White Wine</h3>
+                  <span>$50</span>
+              </div>
+
+              <p>Classic white wine bottle.</p>
+
+              <button>Order now</button>
+          </div>
+      </div>
+
+  </div>
 
 </section>
 

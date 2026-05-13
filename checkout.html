@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+
+</head>
+<!-- ORDER SUCCESS POPUP -->
+
+<div class="order-popup" id="orderPopup">
+
+    <div class="popup-box">
+
+        <div class="success-icon">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+
+        <h2>Order Placed!</h2>
+
+        <p>
+            Your delicious order has been placed successfully.
+        </p>
+
+        <button id="closePopup">
+            Continue
+        </button>
+
+    </div>
+
+</div>
+<body>
+    <a href="menu.html" class="back-btn">
+
+        <i class="fa-solid fa-arrow-left"></i>
+    
+        Back
+    
+    </a>
+   
+<section class="checkout-section">
+
+    <!-- ORDER SUMMARY -->
+
+    <div class="checkout-box">
+
+        <h2>Order Summary</h2>
+
+        <div id="order-summary"></div>
+
+        <div class="total">
+            Total: <span id="total-price">$0</span>
+        </div>
+
+    </div>
+
+    <!-- CHECKOUT FORM -->
+
+    <div class="checkout-box">
+
+        <h2>Payment Details</h2>
+
+        <form class="checkout-form" id="checkoutForm">
+
+            <input type="text"
+            placeholder="Full Name"
+            required>
+
+            <input type="email"
+            placeholder="Email Address"
+            required>
+
+            <input type="tel"
+            placeholder="Phone Number"
+            required>
+
+            <textarea
+            placeholder="Delivery Address"
+            rows="5"
+            required></textarea>
+
+            <select required>
+
+                <option value="">
+                    Select Payment Method
+                </option>
+
+                <option>
+                    Credit Card
+                </option>
+
+                <option>
+                    Cash On Delivery
+                </option>
+
+                <option>
+                    PayPal
+                </option>
+
+            </select>
+
+            <button type="submit">
+                Place Order
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

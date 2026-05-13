@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book a Table - Royal Bites</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <div class="top-header">
+
+        <div class="top-info">
+    
+          <span>
+            <i class="fa-solid fa-phone"></i>
+            +1 234 567 890
+          </span>
+    
+          <span>
+            <i class="fa-solid fa-paper-plane"></i>
+            royalbites@email.com
+          </span>
+    
+        </div>
+    
+        <div class="top-info">
+    
+          <span>
+            Open Hours: Monday - Sunday 8:00AM - 11:00PM
+          </span>
+    
+        </div>
+    
+      </div>
+    
+<!-- HERO -->
+<div class="navbar">
+
+    <div class="logo">
+      Royal Bites
+    </div>
+    <div class="nav-links">
+
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+      <a href="booktable.html" class="book-btn">
+        Book a Table
+    </a>
+    
+
+    </div>
+    <div class="nav-right">
+
+      <!-- CART -->
+  
+     
+  
+      <div class="hamburger">
+  
+          <span></span>
+          <span></span>
+          <span></span>
+  
+      </div>
+  
+  </div>
+  </div>
+<section class="booking-hero">
+
+    <div class="booking-hero-content">
+
+        <h1>Book A Table</h1>
+
+        <p>
+            Reserve your perfect dining experience
+        </p>
+
+    </div>
+
+</section>
+
+<!-- BOOKING SECTION -->
+
+<section class="booking-section">
+
+    <!-- LEFT -->
+
+    <div class="booking-info">
+
+        <h2>Reservation Info</h2>
+
+        <p>
+            Enjoy a luxurious dining experience
+            with Royal Bites. Reserve your table
+            now and make your moments special.
+        </p>
+
+        <div class="info-item">
+
+            <div class="info-icon">
+                <i class="fa-solid fa-clock"></i>
+            </div>
+
+            <div class="info-text">
+
+                <h3>Opening Hours</h3>
+
+                <span>
+                    Monday - Sunday <br>
+                    8:00AM - 11:00PM
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="info-item">
+
+            <div class="info-icon">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+
+            <div class="info-text">
+
+                <h3>Phone</h3>
+
+                <span>
+                    +1 234 567 890
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="info-item">
+
+            <div class="info-icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <div class="info-text">
+
+                <h3>Location</h3>
+
+                <span>
+                    123 Royal Street,
+                    New York, USA
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FORM -->
+
+    <form class="booking-form" id="bookingForm">
+
+        <h2>Reserve Table</h2>
+
+        <div class="form-row">
+
+            <input type="text"
+            placeholder="Full Name"
+            required>
+
+            <input type="email"
+            placeholder="Email Address"
+            required>
+
+        </div>
+
+        <div class="form-row">
+
+            <input type="tel"
+            placeholder="Phone Number"
+            required>
+
+            <input type="date"
+            required>
+
+        </div>
+
+        <div class="form-row">
+
+            <input type="time"
+            required>
+
+            <select required>
+
+                <option value="">
+                    Number of Guests
+                </option>
+
+                <option>1 Person</option>
+                <option>2 People</option>
+                <option>3 People</option>
+                <option>4 People</option>
+                <option>5+ People</option>
+
+            </select>
+
+        </div>
+
+        <textarea
+        placeholder="Special Requests..."
+        ></textarea>
+
+        <button type="submit">
+            Book Now
+        </button>
+
+    </form>
+
+</section>
+
+<!-- POPUP -->
+
+<div class="booking-popup" id="bookingPopup">
+
+    <div class="popup-box">
+
+        <div class="popup-icon">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+
+        <h2>Table Reserved!</h2>
+
+        <p>
+            Your reservation has been confirmed.
+            We look forward to serving you.
+        </p>
+
+        <button id="closePopup">
+            Continue
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
