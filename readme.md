@@ -8,7 +8,7 @@ The website features a professional UI/UX inspired by premium restaurant website
 
 # Live Demo
 
-🔗 [View Live Website](https://aasimchaudhary1.github.io/Decodelabs-front_end_development_project3/)
+🔗 https://aasimchaudhary1.github.io/Decodelabs-front_end_development_project3/
 
 ---
 
