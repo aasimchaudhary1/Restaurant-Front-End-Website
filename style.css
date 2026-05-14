@@ -3325,3 +3325,20 @@ body{
   }
 
 }
+.input-box{
+
+  width:100%;
+}
+
+.input-box label{
+
+  display:block;
+
+  font-size:16px;
+
+  font-weight:600;
+
+  color:#222;
+
+  margin-bottom:10px;
+}
