@@ -1957,26 +1957,45 @@ MENU SECTION
 
   .testimonial-title{
 
-      margin-bottom:40px;
-  }
+    position:relative;
 
-  .testimonial-title span{
+    text-align:center;
 
-      font-size:85px;
+    margin-bottom:70px;
 
-      top:-30px;
+    padding-top:30px;
+}
 
-      width:100%;
+.testimonial-title span{
 
-      text-align:center;
-  }
+  font-size:65px;
 
-  .testimonial-title h2{
+  position:absolute;
 
-      font-size:58px;
+  left:50%;
 
-      line-height:65px;
-  }
+  top:0;
+
+  transform:translateX(-50%);
+
+  white-space:nowrap;
+
+
+
+  z-index:1;
+}
+.testimonial-title h2{
+
+  position:relative;
+
+  z-index:2;
+
+  font-size:52px;
+
+  line-height:1.1;
+
+  margin-top:35px;
+}
 
   .testimonial-card{
 
@@ -2028,6 +2047,20 @@ MENU SECTION
   }
 
 }
+@media(max-width:480px){
+
+  .testimonial-title span{
+
+      font-size:50px;
+  }
+
+  .testimonial-title h2{
+
+      font-size:40px;
+  }
+
+}
+
 @media(max-width:991px){
 
   .hamburger{
