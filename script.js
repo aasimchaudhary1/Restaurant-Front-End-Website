@@ -517,8 +517,11 @@ if(cartIcon && cartSidebar && cartOverlay && closeCart){
 
 }
 
-const cartIconCount = document.querySelector(".cart-icon span");
-const cartItemsContainer = document.querySelector(".cart-items");
+const cartIconCount =
+document.querySelector(".cart-icon span");
+
+const cartItemsContainer =
+document.querySelector(".cart-items");
 
 let cart =
 JSON.parse(localStorage.getItem("cart")) || [];
@@ -571,9 +574,9 @@ function addToCart(name, price, image){
 }
 
 // UPDATE CART
+
 function updateCart(){
 
-    // UPDATE COUNT
     let totalCount = 0;
 
     cart.forEach(item => {
@@ -581,56 +584,90 @@ function updateCart(){
         totalCount += item.quantity;
     });
 
-    cartIconCount.innerText = totalCount;
+    if(cartIconCount){
 
-    // DISPLAY ITEMS
-    cartItemsContainer.innerHTML = "";
+        cartIconCount.innerText = totalCount;
+    }
+    
+    if(cartItemsContainer){
+    
+        cartItemsContainer.innerHTML = "";
+    }
+
     let totalPrice = 0;
+
     if(cart.length === 0){
 
-        cartItemsContainer.innerHTML =
-        "<p>Your cart is empty</p>";
+        if(cartItemsContainer){
+
+            cartItemsContainer.innerHTML =
+            "<p>Your cart is empty</p>";
+        }
+        const cartTotal =
+        document.getElementById("cart-total");
+        
+        if(cartTotal){
+        
+            cartTotal.innerText = "$0";
+        }
+     
+        localStorage.setItem(
+            "cart",
+            JSON.stringify(cart)
+        );
 
         return;
     }
 
     cart.forEach((item,index) => {
-      totalPrice +=
-      parseInt(item.price.replace("$","")) * item.quantity;
-        cartItemsContainer.innerHTML += `
 
-        <div class="cart-item">
-
-            <img src="${item.image}" alt="">
-
-            <div class="cart-details">
-
-                <h4>${item.name}</h4>
-
-                <p>${item.price}</p>
-
-                <span>Qty: ${item.quantity}</span>
-
+        totalPrice +=
+        parseInt(item.price.replace("$",""))
+        * item.quantity;
+    
+        if(cartItemsContainer){
+    
+            cartItemsContainer.innerHTML += `
+    
+            <div class="cart-item">
+    
+                <img src="${item.image}" alt="">
+    
+                <div class="cart-details">
+    
+                    <h4>${item.name}</h4>
+    
+                    <p>${item.price}</p>
+    
+                    <span>Qty: ${item.quantity}</span>
+    
+                </div>
+    
+                <button class="remove-btn"
+                onclick="removeItem(${index})">
+                ✕
+                </button>
+    
             </div>
-
-            <button class="remove-btn"
-            onclick="removeItem(${index})">
-            ✕
-            </button>
-
-        </div>
-
-        `;
-        document.getElementById("cart-total").innerText =
-"$" + totalPrice;
+            `;
+        }
+    
     });
+
+    const cartTotal =
+    document.getElementById("cart-total");
+    
+    if(cartTotal){
+    
+        cartTotal.innerText =
+        "$" + totalPrice;
+    }
 
     localStorage.setItem(
         "cart",
         JSON.stringify(cart)
     );
 }
-
 // REMOVE ITEM
 function removeItem(index){
 
@@ -697,12 +734,11 @@ if(document.getElementById("bookingForm")){
 
 
 
-const cart1 =JSON.parse(localStorage.getItem("checkoutCart")) || [];
-
+const cart1 =
+JSON.parse(localStorage.getItem("cart")) || [];
 if(document.getElementById("order-summary")){
 
-  const cart1 =
-  JSON.parse(localStorage.getItem("checkoutCart")) || [];
+
 
   const summary =
   document.getElementById("order-summary");
