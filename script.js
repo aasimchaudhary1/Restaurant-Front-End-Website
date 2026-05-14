@@ -520,7 +520,8 @@ if(cartIcon && cartSidebar && cartOverlay && closeCart){
 const cartIconCount = document.querySelector(".cart-icon span");
 const cartItemsContainer = document.querySelector(".cart-items");
 
-let cart = [];
+let cart =
+JSON.parse(localStorage.getItem("cart")) || [];
 
 // ALL ORDER BUTTONS
 const orderButtons = document.querySelectorAll(".menu-content button");
@@ -624,6 +625,10 @@ function updateCart(){
 "$" + totalPrice;
     });
 
+    localStorage.setItem(
+        "cart",
+        JSON.stringify(cart)
+    );
 }
 
 // REMOVE ITEM
@@ -634,6 +639,10 @@ function removeItem(index){
     updateCart();
 }
 
+if(cart.length > 0){
+
+    updateCart();
+}
 const checkoutBtn =
 document.querySelector(".checkout-btn");
 
@@ -758,7 +767,11 @@ if(document.getElementById("checkoutForm")){
 
       orderPopup.classList.remove("active");
 
-      window.location.href = "index.html";
+      localStorage.removeItem("cart");
+
+localStorage.removeItem("checkoutCart");
+
+window.location.href = "index.html";
   });
 
 }

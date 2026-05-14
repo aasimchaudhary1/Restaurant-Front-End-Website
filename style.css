@@ -2229,15 +2229,18 @@ MENU SECTION
 
       align-items:center;
 
-      padding:50px 5%;
+      padding:90px 20px 50px;
   }
 
   .checkout-box{
 
       width:100%;
-      max-width:400px;
 
-      min-height:auto;
+      max-width:100%;
+
+      padding:30px 20px;
+
+      border-radius:16px;
   }
 
 }
@@ -2771,16 +2774,21 @@ body{
 
     padding:80px 8%;
 }
+
 .checkout-box{
 
-    background:#fff;
-    width:500px;
-    min-height:580px;
-    padding:35px;
+  background:#fff;
 
-    border-radius:12px;
+  width:100%;
+  max-width:500px;
 
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+  min-height:580px;
+
+  padding:35px;
+
+  border-radius:12px;
+
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
 #order-summary{
 
