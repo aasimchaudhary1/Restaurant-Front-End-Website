@@ -6,7 +6,7 @@ The website features a professional UI/UX inspired by premium restaurant website
 
 ---
 
-# Live Demo
+# Live  Preview
 
 https://aasimchaudhary1.github.io/Decodelabs-front_end_development_project3/
 
